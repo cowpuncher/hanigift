@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Главная страница</title>
 </head>
 <body>
@@ -170,6 +171,146 @@
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                           </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popularSection">
+                <div class="container">
+                    <div class="catalog">
+                        <div class="catalogBlock border_white">
+                            <!--
+                                ЭТО БУДЕТ ДЛИННЫЙ ТЕКСТ)
+                                У нас в макете есть три вида отображения
+                                На главной первый вид
+                                Я сделал чтобы можно было заменой класса
+                                менять положение большой картинки слева или справа
+                                Класс данного вида отображениея - grid_1
+                                Класс распололжения большой кратинки left или right соответсвенно
+                                Дальше для того чтобы клиент мог указать
+                                какая картинка большая, какая длинная, какая маленькая и тд
+                                я присобачил им классы, по ним как раз и строится отображение 
+                                Так что не забудь им дать нужные классы, так как по умолчанию
+                                там нет отображения, это связно с тем, что если давать их 
+                                по умолчанию, это делается через псевдоклассы, а их потом 
+                                можно перебить только с помощью !important, а это уже 
+                                КОСТЫЛИКИ
+                                Остальные комментарии дам уже в каталоге ))
+                            -->
+                            <div class="catalogList grid grid_1 left">
+                                <a href="#" class="card cardBig">
+                                    <div class="about">
+                                        <div class="title">Подарочный набор "Талисман из Удмуртии"</div>
+                                        <div class="price">
+                                            <span class="del">1000 ₽</span>
+                                            <span class="total">700 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="image"><img src="/assets/img/cat_1.png" alt="cat"></div>
+                                </a>
+                                <a href="#" class="card cardLong">
+                                    <div class="about">
+                                        <div class="title">Сувенирное оружие макет Автомата Калашников АК-47 в ящике</div>
+                                        <div class="price">
+                                            <span class="del">4000 ₽</span>
+                                            <span class="total">3750 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="image"><img src="/assets/img/cat_2.png" alt="cat"></div>
+                                </a>
+                                <a href="#" class="card cardSmall">
+                                    <div class="about">
+                                        <div class="title">Нож Н6, ст.95х18, дюраль, кожа</div>
+                                        <div class="price">
+                                            <span class="del">6000 ₽</span>
+                                            <span class="total">5800 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="image"><img src="/assets/img/cat_3.png" alt="cat"></div>
+                                </a>
+                                <a href="#" class="card cardSmall">
+                                    <div class="about">
+                                        <div class="title">Ручка-патрон в деревянном ящике</div>
+                                        <div class="price">
+                                            <span class="del">3000 ₽</span>
+                                            <span class="total">2800 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="image"><img src="/assets/img/cat_4.png" alt="cat"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tizersSection">
+                <div class="container">
+                    <div class="tizers">
+                        <div class="tizersItem">
+                            <div class="icon"><img src="/assets/img/tizers1.svg" alt=""></div>
+                            <div class="text">
+                                Более 5000 сувениров на любой вкус
+                            </div>
+                        </div>
+                        <div class="tizersItem">
+                            <div class="icon"><img src="/assets/img/tizers2.svg" alt=""></div>
+                            <div class="text">
+                                10567 клиентов со всех уголков мира
+                            </div>
+                        </div>
+                        <div class="tizersItem">
+                            <div class="icon"><img src="/assets/img/tizers3.svg" alt=""></div>
+                            <div class="text">
+                                доставка от 5 дней в любую точку мира
+                            </div>
+                        </div>
+                        <div class="tizersItem">
+                            <div class="icon"><img src="/assets/img/tizers4.svg" alt=""></div>
+                            <div class="text">
+                                качество, отмеченное министром обороны РФ С.К. Шойгу 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallerySection">
+                <div class="container">
+                    <div class="gallery">
+                        <div class="catalog">
+                            <div class="catalogBlock border_1">
+                                <!--
+                                    ЭТО БУДЕТ ДЛИННЫЙ ТЕКСТ)
+                                    У нас в макете есть три вида отображения
+                                    На главной первый вид
+                                    Я сделал чтобы можно было заменой класса
+                                    менять положение большой картинки слева или справа
+                                    Класс данного вида отображениея - grid_1
+                                    Класс распололжения большой кратинки left или right соответсвенно
+                                    Дальше для того чтобы клиент мог указать
+                                    какая картинка большая, какая длинная, какая маленькая и тд
+                                    я присобачил им классы, по ним как раз и строится отображение 
+                                    Так что не забудь им дать нужные классы, так как по умолчанию
+                                    там нет отображения, это связно с тем, что если давать их 
+                                    по умолчанию, это делается через псевдоклассы, а их потом 
+                                    можно перебить только с помощью !important, а это уже 
+                                    КОСТЫЛИКИ
+                                    Остальные комментарии дам уже в каталоге ))
+                                -->
+                                <div class="catalogList grid grid_1 right">
+                                    <a href="#" class="card cardBig imageOnly">
+                                        <div class="image"><img src="/assets/img/gal_1.png" alt="cat"></div>
+                                    </a>
+                                    <a href="#" class="card cardLong imageOnly">
+                                        <div class="image"><img src="/assets/img/gal_2.png" alt="cat"></div>
+                                    </a>
+                                    <a href="#" class="card cardSmall imageOnly">
+                                        <div class="image"><img src="/assets/img/gal_3.png" alt="cat"></div>
+                                    </a>
+                                    <a href="#" class="card cardSmall imageOnly">
+                                        <div class="image"><img src="/assets/img/gal_4.png" alt="cat"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

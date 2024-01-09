@@ -1,5 +1,88 @@
 :root {
-    --main-ff: 'Nunito Sans', serif;
-    --header-ff: 'STIX Two Text', serif;
+    /* Fonts */
+    --ff-main: 'Nunito Sans', serif;
+    --ff-header: 'STIX Two Text', serif;
+    /* Color */
+    --color-base:#5F112D;
+    --color-bg: #F4F3F3;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-1: #8C123E;
+    /* Font size ciontents */
+    --fz-1: 16px;
+    --fz-2: 14px;
+    --fz-3: 12px;
+    /* Font size headers */
+    --fz-header-1: 52px;
+    /* Borders */
+    --border-1: 15px solid #CEAEB8;
+    --border-2: 15px solid #ffffff;
+    
+    /* Box-shadows */
+    --box-sh-1: 0 0 0 1px #ffffff, 0 0 0 7px rgb(206 174 184 / 100%);
+    --box-sh-2: 0 0 0 1px #EEC3D1, 0 0 0 7px rgb(255 255 255 / 100%);
+}
+
+/* Specification */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--ff-main);
+    font-size: var(--fz-1);
+    background: var(--color-bg);
+}
+a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+.container {
+    max-width: 1174px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.sectionTitle {
+    font-family: var(--ff-header);
+    font-size: var(--fz-header-1);
+}
+
+/* GRID catalog */
+.grid {
+    display: grid;
+}
+.grid_1 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+.grid_1.left .cardBig { grid-area: 1 / 1 / 3 / 3; }
+.grid_1.left .cardLong { grid-area: 1 / 3 / 2 / 7; }
+.grid_1.left .cardSmall.left { grid-area: 2 / 3 / 3 / 5; }
+.grid_1.left .cardSmall.right { grid-area: 2 / 5 / 3 / 7; }
+    
+.grid_1.right .cardBig { grid-area: 1 / 5 / 3 / 7; }
+.grid_1.right .cardLong { grid-area: 1 / 1 / 2 / 5; }
+.grid_1.right .cardSmall.right { grid-area: 2 / 3 / 3 / 5; }
+.grid_1.right .cardSmall.left { grid-area: 2 / 1 / 3 / 3; }
+
+.grid_2 {
+    
+}
+.grid_3 {
+    
+}
+
+/* Border color */
+.border_white {
+    border: var(--border-2);
+    box-shadow: var(--box-sh-2);
+}
+.border_1 {
+    border: var(--border-1);
+    box-shadow: var(--box-sh-1);
 
 }
